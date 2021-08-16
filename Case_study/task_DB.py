@@ -5,7 +5,7 @@ import smtplib
 
 
 def connectToDB():
-    mydb = mysql.connector.connect(host="localhost", user="root", password="Ak99#40*72", database="jobtracking")
+    mydb = mysql.connector.connect(host="localhost", user="root", password="password", database="jobtracking")
     return mydb
 
 def insertTask(task):
@@ -60,7 +60,7 @@ def AssignTask(userid,taskid):
     val=(userid,taskid)
     mycursor.execute(sql, val)
     session = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-    session.login("s.akshay1999@gmail.com", "akshay@270499")
+    session.login("s.akshay1999@gmail.com", "password")
     message = "Hello!! You have been assigned a task. Please complete it ASAP"
     session.sendmail("s.akshay1999@gmail.com", ReceiverEmail(userid), message)
     session.quit()
