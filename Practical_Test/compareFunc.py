@@ -1,6 +1,6 @@
 def compareStrength(strength,energy):
     if (energy == strength):
-        print("Both are equal")
+        return "Both are equal"
 
     else:
         count=0
@@ -9,8 +9,8 @@ def compareStrength(strength,energy):
                 count += 1
 
         if (count == len(energy)):
-            print("Result - WIN")
+            return "Result - WIN"
 
         else:
-            print("Result - LOSE")
+            return "Result - LOSE"
 
