@@ -12,6 +12,6 @@ if (len(strength) != len(energy)):
     raise Exception("Number of heroes and enemies don't match")
 
 else:
-    compareStrength(strength, energy)
+    print(compareStrength(strength, energy))
     print(strength)
     print(energy)
