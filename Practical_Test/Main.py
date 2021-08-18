@@ -13,5 +13,4 @@ if (len(strength) != len(energy)):
 
 else:
     print(compareStrength(strength, energy))
-    print(strength)
-    print(energy)
+    
