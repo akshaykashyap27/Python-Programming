@@ -24,10 +24,3 @@ if __name__ == '__main__':
     unittest.main()
 
 
-'''
-IMPORTANT TERMS:
-test fixture
-test case
-test suite
-test runner
-'''
